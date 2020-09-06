@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="./fontawesome/css/all.css" rel="stylesheet">
+    <title>title</title>
+    <style>
+        /* ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: lightgray; 
+        } */
+
+        body {
+            background-color: lightgray;
+        }
+
+        @media (min-width: 0px) {
+            #logo {
+                max-width: 50px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            #logo {
+                max-width: 90px;
+            }
+        }
+        
+        #phone-search {
+            font-size: 1.5em;
+        }
+
+        #redes {
+            font-size: 2em;
+        }
+
+        .categoria {
+            border: darkred solid;
+            border-width: 0 0 0 0.5em;
+            padding: 0 1.5em;
+            margin: 1.5em 0;
+        }
+
+        .categoria-items {
+            overflow-x: auto;
+        }
+
+        .categoria-item {
+            padding: 0 0.25em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-white">
+        <div class="bg-danger row">
+            <div class="col-6">
+                <div class="d-inline-block py-2" id="logo">
+                    <img src="logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="d-none d-md-inline-block text-white h1">
+                    Rotten Tomatoes
+                </div>
+            </div>
+            <div class="d-none d-md-block col-6 text-right">
+                <div class="p-2">
+                    <form action="" class="form-inline d-inline-block">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white" id="basic-addon1">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Buscar" >
+                        </div>
+                    </form>
+                    <div class="d-inline-block ml-3 text-white">
+                        <a href="" class="text-white">
+                            Iniciar sesión
+                        </a>
+                        |
+                        <a href="" class="text-white">
+                            Registrarse
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <ul class="list-group list-group-horizontal text-center">
+                        <li class="list-group-item list-group-item-action">
+                            Categoría 1
+                        </li>
+                        <li class="list-group-item list-group-item-action">
+                            Categoría 2
+                        </li>
+                        <li class="list-group-item list-group-item-action">
+                            Categoría 3
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 text-right d-md-none py-2">
+                <button class="btn btn-danger" id="phone-search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class="">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://picsum.photos/900/300" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://picsum.photos/900/300" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://picsum.photos/900/300" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categorias">
+                <div class="categoria">
+                    <div class="categoria-nombre h3">
+                        Categoría 1
+                    </div>
+                    <div class="categoria-items row flex-nowrap">
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoria">
+                    <div class="categoria-nombre h3">
+                        Categoría 2
+                    </div>
+                    <div class="categoria-items row flex-nowrap">
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-2 categoria-item">
+                            <div class="card">
+                                <img src="poster.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: End Game</h5>
+                                    <div class="card-text">
+                                        <i class="fa fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none d-md-block bg-danger row">
+            <div class="col" id="redes">
+                <a href="" class="text-white">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="" class="text-white">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="" class="text-white">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+            <div class="col text-right">
+                <a href="" class="text-white">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+        <div class="collapse" id="menu_collapse">Hola</div>
+        <div class="d-md-none bg-danger row">
+            <button class="col btn btn-danger">
+                <i class="fas fa-film"></i>
+            </button>
+            <button class="col btn btn-danger">
+                <i class="fas fa-tv"></i>
+            </button>
+            <button class="col btn btn-danger">
+                <i class="fas fa-video"></i>
+            </button>
+            <button class="col btn btn-danger" data-toggle="collapse" data-target="#menu_collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
